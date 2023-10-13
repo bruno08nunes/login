@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    background-color: #5F2C82;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+section {
+    background-color: white;
+    width: 250px;
+    height: 480px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.div_img {
+    background: #a35ad4 url(https://professorguanabara.github.io/projeto-login/imagens/metal.jpg) left bottom;
+    background-size: cover;
+    height: 200px;
+}
+
+.div_form {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.div_form div {
+    background-color: #5F2C82;
+    margin: 5px 0;
+    padding: 2px;
+    font-size: 1.1em;
+    gap: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+
+span {
+    color: white;
+    transform: scale(1.2);
+}
+
+input {
+    height: 30px;
+    flex-grow: 0.5;
+    border-radius: 10px;
+    background-color: #94CFCD;
+    border: none;
+    padding: 2px;
+}
+
+label {
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: #94cfc0;
+    cursor: pointer;
+    &:hover {
+        background-color: #2D6462;
+    };
+}
+
+a {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #94cfc0;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    &:hover {
+        background-color: #6CD3CF;
+    };
+    & #mail {
+        color: #2D6462;
+        transform: scale(0.8);
+        position: absolute;
+        top: -4px;
+    }
+}
